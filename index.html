@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact -Site</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+      <nav class="navbar">
+      <img src="chlg.jpg" class="logo"/>
+      <div class="tabs">
+        <input id="tab-1" type="radio" name="group" />
+        <input id="tab-2" type="radio" name="group" />
+        <input id="tab-3" type="radio" name="group" />
+        <input id="tab-4" type="radio" name="group" />
+
+        <div class="buttons">
+          <label class="material-symbols-outlined" for="tab-1"> Services </label>
+          <label class="material-symbols-outlined" for="tab-2"> Expert </label>
+          <label class="material-symbols-outlined" for="tab-3">Sample</label>
+          <label class="material-symbols-outlined" for="tab-4">Blog</label>
+          <label class="material-symbols-outlined" for="tab-4">Contact</label>
+          </label>
+          <div class="underline"></div>
+        </div>
+    </nav>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Fill in your details
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Address</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>example.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="webform.php" method="POST" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="name">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="mail">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="phone">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="message">Message</label>
+              <span>Message</span>
+            </div>
+            <div class="container1">
+              <input type="file" id="file-input" multiple />
+              <label class="inputk" for="file-input">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                &nbsp; Choose Files To Upload
+              </label>
+              <div id="num-of-files">No Files Choosen</div>
+              <ul id="files-list"></ul>
+            </div>
+            <script src="script.js"></script>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var share_btn = document.querySelector(".share_btn");
+      var toggle_button = document.querySelector(".toggle_button");
+      share_btn.addEventListener("click", function(){
+        toggle_button.classList.toggle("active");
+      })
+                  </script>
+                </div>
+                </div>
+                </div>
+                                </body>
+                </html>
